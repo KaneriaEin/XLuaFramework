@@ -1,0 +1,8 @@
+Assets/BuildResources/UI/Prefabs/TestUI.prefab|ui/prefabs/testui.prefab|Assets/BuildResources/UI/Res/background.png|Assets/BuildResources/UI/Res/button_150.png
+Assets/BuildResources/UI/Res/background.png|ui/res/background.png
+Assets/BuildResources/UI/Res/button_150.png|ui/res/button_150.png
+Assets/BuildResources/UI/Res/img_jindutiaodikuang.png|ui/res/img_jindutiaodikuang.png
+Assets/BuildResources/UI/Res/img_jindutiaoxuanzhong.png|ui/res/img_jindutiaoxuanzhong.png
+Assets/BuildResources/UI/Res/radio_100.png|ui/res/radio_100.png
+Assets/BuildResources/UI/Res/slider_handle.png|ui/res/slider_handle.png
+Assets/BuildResources/UI/Res/universal_panel_40.png|ui/res/universal_panel_40.png
