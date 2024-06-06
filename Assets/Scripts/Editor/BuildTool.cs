@@ -9,7 +9,6 @@ public class BuildTool : Editor
     [MenuItem("Tools/Build Windows Bundle")]
     static void BundleWindowsBuild()
     {
-        Debug.Log("testtesttesttesttesttest");
         Build(BuildTarget.StandaloneWindows);
     }
 
@@ -45,15 +44,12 @@ public class BuildTool : Editor
             assetBundle.assetNames = new string[] { assetName };
             string bundleName = fileName.Replace(PathUtil.BuildResourcesPath, "").ToLower();
 
-            Debug.Log("assetName: " + assetName);
-            Debug.Log("bundleName: " + bundleName);
-
             assetBundle.assetBundleName = bundleName + ".ab";
             assetBundleBuilds.Add(assetBundle);
 
             //添加文件和依赖信息
             List<string> dependenceInfo = GetDependence(assetName);
-            string bundleInfo = assetName + "|" + bundleName;
+            string bundleInfo = assetName + "|" + bundleName + ".ab";
 
             if(dependenceInfo.Count > 0)
                 bundleInfo = bundleInfo + "|"  + string.Join("|", dependenceInfo);
