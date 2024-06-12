@@ -13,9 +13,21 @@ public class PathUtil
     //bundle 输出目录
     public static readonly string BundleOutPath = Application.streamingAssetsPath;
 
+    //只读目录
+    public static readonly string ReadPath = Application.streamingAssetsPath;
+
+    //可读写目录
+    public static readonly string ReadWritePath = Application.persistentDataPath;
+
+    //Bundle资源路径
     public static string BundleResourcePath
     {
-        get { return Application.streamingAssetsPath; }
+        get
+        {
+            if (AppConst.GameMode == GameMode.UpdateMode)
+                return ReadWritePath;
+            return ReadPath;
+        }
     }
 
     /// <summary>
@@ -40,5 +52,40 @@ public class PathUtil
         if(string.IsNullOrEmpty(path))
             return string.Empty;
         return path.Trim().Replace("\\", "/");
+    }
+
+    public static string GetLuaPath(string name)
+    {
+        return string.Format("Assets/BuildResources/LuaScripts/{0}.bytes", name);
+    }
+
+    public static string GetUIPath(string name)
+    {
+        return string.Format("Assets/BuildResources/UI/Prefabs/{0}.prefab", name);
+    }
+
+    public static string GetMusicPath(string name)
+    {
+        return string.Format("Assets/BuildResources/Audio/Music/{0}", name);
+    }
+
+    public static string GetSoundPath(string name)
+    {
+        return string.Format("Assets/BuildResources/Audio/Sound/{0}", name);
+    }
+
+    public static string GetEffectPath(string name)
+    {
+        return string.Format("Assets/BuildResources/Effect/Prefabs/{0}.prefab", name);
+    }
+
+    public static string GetSpritePath(string name)
+    {
+        return string.Format("Assets/BuildResources/Sprites/{0}", name);
+    }
+
+    public static string GetScenePath(string name)
+    {
+        return string.Format("Assets/BuildResources/Scenes/{0}.unity", name);
     }
 }
