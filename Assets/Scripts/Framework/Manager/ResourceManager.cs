@@ -39,6 +39,9 @@ public class ResourceManager : MonoBehaviour
                 bundleInfo.Dependences.Add(info[j]);
             }
             m_BundleInfos.Add(bundleInfo.AssetsName, bundleInfo);
+
+            if (info[0].IndexOf("LuaScripts")>0)
+                Manager.Lua.LuaNames.Add(info[0]);
         }
     }
 
@@ -131,6 +134,11 @@ public class ResourceManager : MonoBehaviour
     public void LoadSprite(string assetName, Action<UObject> action = null)
     {
         LoadAsset(PathUtil.GetSpritePath(assetName), action);
+    }
+
+    public void LoadLua(string assetName, Action<UObject> action = null)
+    {
+        LoadAsset(assetName, action);
     }
 
     //Tag: Ð¶ÔØÔÝÊ±²»×ö
