@@ -1,15 +1,15 @@
 ManifestFileVersion: 0
-CRC: 61211762
+CRC: 2882681000
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: f0c3de4c78b4754ca7878feca79c9685
+    Hash: b0a8c0c36631ff408ef172d0462323ca
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 3fb307ddbac10682108c61aeba67d548
+    Hash: cb1b5b9d76677d7f33abf44474ffbb8e
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: f0c3de4c78b4754ca7878feca79c9685
+    Hash: b0a8c0c36631ff408ef172d0462323ca
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -24,6 +24,8 @@ ClassTypes:
   Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
 - Class: 115
@@ -52,9 +54,10 @@ SerializeReferenceClassIdentifiers:
 - AssemblyName: UnityEngine.UI
   ClassName: UnityEngine.UI.Navigation
 - AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.Slider/SliderEvent
+- AssemblyName: UnityEngine.UI
   ClassName: UnityEngine.UI.SpriteState
 Assets:
 - Assets/BuildResources/UI/Prefabs/Login/LoginUI.prefab
 Dependencies:
-- D:/Study/Vipskill/P2XluaFrameWork/XLuaFramework/Assets/StreamingAssets/ui/res/background.png.ab
-- D:/Study/Vipskill/P2XluaFrameWork/XLuaFramework/Assets/StreamingAssets/ui/res/slider_handle.png.ab
+- D:/Study/Vipskill/P2XluaFrameWork/XLuaFramework/Assets/StreamingAssets/ui/res/button_150.png.ab

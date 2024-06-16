@@ -11,3 +11,5 @@
 /Temp
 /Bin
 /Assembly-CSharp.csproj.user
+/Assets/XLua/Gen
+/Assets/XLua/Gen.meta

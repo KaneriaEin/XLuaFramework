@@ -1,0 +1,22 @@
+function OnInit()
+    print("lua onInit playerentity");
+end
+
+function OnShow()
+    print("lua OnShow playerentity");
+    self.transform.localPosition = Vector3(0,2,0);
+end
+
+function Update()
+    print("lua Update playerentity");
+    if Input.GetKey(KeyCode.W) then
+        self.transform:Translate(self.transform.forward * Time.deltaTime * 5);
+    end
+    if Input.GetKey(KeyCode.S) then
+        self.transform:Translate(-self.transform.forward * Time.deltaTime * 5);
+    end
+end
+
+function OnHide()
+    print("lua OnHide playerentity");
+end

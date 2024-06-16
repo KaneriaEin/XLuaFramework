@@ -1,15 +1,15 @@
 ManifestFileVersion: 0
-CRC: 477501295
+CRC: 2089143201
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 6a285f6ed450ff22b076aff176f6b67d
+    Hash: 65eaef11b5b5833a0431892c3c69592f
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 3fb307ddbac10682108c61aeba67d548
+    Hash: cb1b5b9d76677d7f33abf44474ffbb8e
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: 6a285f6ed450ff22b076aff176f6b67d
+    Hash: 65eaef11b5b5833a0431892c3c69592f
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -24,6 +24,8 @@ ClassTypes:
   Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
 - Class: 115
@@ -51,6 +53,8 @@ SerializeReferenceClassIdentifiers:
   ClassName: UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
 - AssemblyName: UnityEngine.UI
   ClassName: UnityEngine.UI.Navigation
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.Slider/SliderEvent
 - AssemblyName: UnityEngine.UI
   ClassName: UnityEngine.UI.SpriteState
 Assets:
