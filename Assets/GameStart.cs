@@ -5,12 +5,14 @@ using UnityEngine;
 public class GameStart : MonoBehaviour
 {
     public GameMode GameMode;
+    public bool OpenLog;
     // Start is called before the first frame update
     void Start()
     {
         Manager.Event.Subscribe(10000, OnLuaInit);
 
         AppConst.GameMode = this.GameMode;
+        AppConst.OpenLog = this.OpenLog;
         DontDestroyOnLoad(this);
 
         Manager.Resource.ParseVersionFile();
